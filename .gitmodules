@@ -1,0 +1,4 @@
+[submodule "airlearning-ue4"]
+	path = airlearning-ue4
+	url = https://github.com/harvard-edge/airlearning-ue4.git
+	branch = master
