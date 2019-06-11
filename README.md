@@ -74,5 +74,30 @@ Air Learning uses Hardware-in-the-loop (HIL) methodology for system evaluation. 
 * A high-end desktop that simulates a virtual environment flying the UAV.
 
 * An embedded system that runs the operating system, the deep reinforcement learning algorithms, policies and associated software stack  
-* A flight controller that controls the flight of the UAV in the simulated environment ($ right $).
+* A flight controller that controls the flight of the UAV in the simulated environment.
 
+## How to get it
+
+Currently Air Learning is tested on Windows 10. For Linux users, please stay tuned!
+
+There are two parts to Air Learning. 
+* The Air Learning environment generator ([Installation instruction](https://github.com/harvard-edge/airlearning-ue4))
+* Air Learninng Reinforcement Learning Training ([Installation instruction](https://github.com/harvard-edge/airlearning-rl))
+
+## Participate
+
+### Paper
+More technical information and insights on using Air Learning can be found [here](https://arxiv.org/pdf/1906.00421.pdf):
+
+```
+@article{krishnan2019air,
+  title={Air Learning: An AI Research Platform for Algorithm-Hardware Benchmarking of Autonomous Aerial Robots},
+  author={Krishnan, Srivatsan and Borojerdian, Behzad and Fu, William and Faust, Aleksandra and Reddi, Vijay Janapa},
+  journal={arXiv preprint arXiv:1906.00421},
+  year={2019}
+}
+```
+
+### Contribute
+
+Air Learning aims in softening the bounderies between Robotics, Reinforcement learning, Controls, and System architecture by providing a cross-disciplinary infrastructure for researchers in these domain. If like us, you also believe in looking at the problem holistically please reach out to us. Also we welcome any contributions that makes this tool better or easy to use.
