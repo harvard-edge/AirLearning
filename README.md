@@ -41,7 +41,38 @@ Applying different materials to the same obstalces:
 For information on installing Air Learning environment generator, check the following [repository](https://github.com/harvard-edge/airlearning-ue4/tree/b4f27ea457936609745ddad1191ab8c54f8799ac) or follow the airlearning-ue4 sub-module in this repository.
 
 ## Air Learning RL
+Deep reinforcement learning is still a nascent field that is rapidly evolving. Hence, there is significant infrastructure overhead to integrate a simulator and evaluate new deep reinforcement learning algorithms for UAVs.
+
+So, we expose our random environment generator and AirSim UE4 plugin as an OpenAI gym interface and integrate it popular reinforcement learning framework with stable baselines (which is based on OpenAI baselines) and Keras-RL. To expose our random environment generator into an OpenAI gym interface, we extend the work of AirGym to add support for environment randomization, a wide range of sensors (Depth image, Inertial Measurement Unit (IMU) data, RGB image, etc.) from AirSim and support exploring multimodal policies.
+
+Currently we support two reinforcement learning algorithms one for discrete actions control and one for continuous action control:
+* Deep Q-Networks (DQN)
+* Proximal Policy Optimization (PPO)
+
+
+Using Air Learning we can use train different reinforcement learning algorithms. Here is the video demonstration of using Air Learning environment generator used in RL training.
+
+<p align="center">
+<img align= "center" src="https://github.com/harvard-edge/airlearning-ue4/blob/master/Images/training_gif.gif">
+</p>
+
+
 
 ## Hardware Evaluation
 
+Often aerial roboticists port the algorithm onto UAVs to validate the functionality of the algorithms. These UAVs can be custom built or commercially available off-the-shelf (COTS) UAVs but mostly have fixed hardware that can be used as onboard compute. A critical shortcoming of this approach is that the roboticist cannot experiment with hardware changes. More powerful hardware may (or may not) unlock additional capabilities during flight, but there is no way to know until the hardware is available on a real UAV so that the roboticist can physically experiment with the platform. 
+
+Reasons for wanting to do such exploration includes understanding the computational requirements of the system, quantifying the energy consumption implications as a result of interactions between the algorithm and the hardware, and so forth. Such evaluation is crucial to determine whether an algorithm is, in fact, feasible when ported to a real UAV with a specific hardware configuration and battery constraints.
+
+For instance, a Parrot Bepop comes with a P7 dual-core CPU Cortex A9 and a Quad core GPU. It is not possible to fly the UAV assuming a different piece of hardware, such as the NVIDIA Xavier processor that is significantly more powerful; at the time of this writing there is no COTS UAV that contains the Xavier platform. So, one would have to wait until a commercially viable platform is available. However, using Air Learning, one can experiment how the UAV would behave with a Xavier since the UAV is flying virtually. 
+
+<p align="center">
+<img align= "center" src="https://github.com/harvard-edge/airlearning/blob/master/docs/images/hil.jpg" width="500" >
+</p>
+
+Air Learning uses Hardware-in-the-loop (HIL) methodology for system evaluation. A HIL simulation combines the benefits of the real design and the simulation by allowing them to interact with one another as shown in the figure above. There are three core components in Air Learning HIL methodology: 
+* A high-end desktop that simulates a virtual environment flying the UAV.
+
+* An embedded system that runs the operating system, the deep reinforcement learning algorithms, policies and associated software stack  
+* A flight controller that controls the flight of the UAV in the simulated environment ($ right $).
 
