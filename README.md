@@ -101,3 +101,14 @@ More technical information and insights on using Air Learning can be found [here
 ### Contribute
 
 Air Learning aims in softening the bounderies between Robotics, Reinforcement learning, Controls, and System architecture by providing a cross-disciplinary infrastructure for researchers in these domain. If like us, you also believe in looking at the problem holistically please reach out to us. Also we welcome any contributions that makes this tool better or easy to use.
+
+### Contributors
+* Srivatsan Krishnan (Harvard University)
+* Behzad Boroujerdian (The University of Texas at Austin)
+* William Fu ( Harvard university)
+* Aleksandra Faust (Robotics at Google)
+* Vijay Janapa Reddi (Harvard University)
+
+### Contact (Maintainers)
+* Srivatsan Krishnan (srivatsan@seas.harvard.edu)
+
