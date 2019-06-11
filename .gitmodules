@@ -2,3 +2,7 @@
 	path = airlearning-ue4
 	url = https://github.com/harvard-edge/airlearning-ue4.git
 	branch = master
+[submodule "airlearning-rl"]
+	path = airlearning-rl
+	url = https://github.com/harvard-edge/airlearning-rl.git
+	branch = master
