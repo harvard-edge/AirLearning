@@ -50,7 +50,7 @@ Currently we support two reinforcement learning algorithms one for discrete acti
 * Proximal Policy Optimization (PPO)
 
 
-Using Air Learning we can use train different reinforcement learning algorithms. Here is the video demonstration of using Air Learning environment generator used in RL training.
+Using Air Learning we can train different reinforcement learning algorithms. Here is the video demonstration of using Air Learning environment generator used in RL training.
 
 <p align="center">
 <img align= "center" src="https://github.com/harvard-edge/airlearning-ue4/blob/master/Images/training_gif.gif">
