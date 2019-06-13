@@ -76,6 +76,19 @@ Air Learning uses Hardware-in-the-loop (HIL) methodology for system evaluation. 
 * An embedded system that runs the operating system, the deep reinforcement learning algorithms, policies and associated software stack  
 * A flight controller that controls the flight of the UAV in the simulated environment.
 
+## Quality of Flight Metrics
+Success rate has been a sole criteria for evaluating reinforcement learning algorithms so far. It kind of makes sense for domains like computer games. However for applying the success of these learning algorithms to mobile robot (like UAVs), success rate alone seldom captures the efficacy of the algorithm. For instance, UAV are heavily constrained by the compute capability as well as amount of energy availale onboard. To give a very high level perspective, In self-driving cars, the compute prototypes alone consume about [2.5kW of power](https://www.wired.com/story/self-driving-cars-power-consumption-nvidia-chip/) which translate to reduced range of the car. In contrast to car, the situation is extremely dire for UAVs. For example:
+
+<p align="center">
+<img align= "center" src="https://github.com/harvard-edge/airlearning/blob/master/docs/images/energy-significance.png" width="500" >
+</p>
+
+The energy delta between a car and UAVs (High-end) is about 1000x. Hence an algorithm designed specifically for UAVs has to account for these constrains early on in the design phase. Hence when we developed Air Learning, we baked other metrics (beyond success rate) that quantifies the overall quality of flight. In this version of Air Learning we have the follow quality of flight metrics:
+* Success rate
+* Energy per mission
+* Distance Travelled
+* Flight time
+
 ## How to get it
 
 Currently Air Learning is tested on Windows 10. For Linux users, please stay tuned!
