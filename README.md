@@ -1,5 +1,5 @@
 # Air Learning
-Aerial robotics is a cross-layer, interdisciplinary field. Air Learning is an effort to bridge seemingly disparate fields.
+Aerial robotics is a cross-layer, interdisciplinary field. **Air Learning** is an effort to bridge seemingly disparate fields.
 
 Designing an autonomous aerial robot to perform a task involves interactions between various boundaries spanning from modeling the environment down to the choice of onboard computer platform available in the robot. Our goal through building Air Learning is to provide researchers with a cross-domain infrastructure that allows them to holistically study and evaluate reinforcement learning algorithms for aerial autonomous machines. Air Learning is built on top of several open-source tools such as Microsoft AirSim, OpenAI Gym, Stable-Baselines, and Epic games Unreal Engine.
 
