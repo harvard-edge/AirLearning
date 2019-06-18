@@ -12,7 +12,7 @@ Learning algorithms are data hungry, and the availability of high-quality data i
 We designed an environment generator specifically targeted for autonomous UAVs. Air Learning's environment generator creates high fidelity photo-realistic environments for the UAVs to fly in. The environment generator is built on top of UE4 and uses the AirSim UE4 plugin for the UAV model and flight physics. The environment generator with the AirSim plugin is exposed as OpenAI gym interface. 
 
 The environment generator has different configuration knobs for generating challenging environments. The configuration knobs available in the current version can be classified into two categories. The first category includes the parameters that can be controlled via a game configuration file. The second category consists of the parameters that can be controlled outside the game configuration file. The full list of parameters that can be controlled are shown in the tabulated [here](https://github.com/harvard-edge/airlearning-ue4):
-                                                      	|
+                                            
 
 ### Demonstration of Air Learning Environment Generator
 Here is an simple demo to show how we can use Air Learning environment generator to convert a UE4 mesh into a dynamic obstacle.
