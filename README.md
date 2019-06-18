@@ -3,7 +3,7 @@ Aerial robotics is a cross-layer, interdisciplinary field. **Air Learning** is a
 
 Designing an autonomous robot to perform a task involves interactions between various boundaries spanning from modeling the environment down to the choice of onboard computer platform available in the robot. Our goal through building Air Learning is to provide researchers with a cross-domain infrastructure that allows them to holistically study and evaluate reinforcement learning algorithms for autonomous aerial machines. Air Learning is built on top of several open-source tools such as Microsoft AirSim, OpenAI Gym, Stable-Baselines, and Epic games Unreal Engine.
 
-We depit the main components of the Air Learning infrastructure below:
+We depict the main components of the Air Learning infrastructure below:
 ![](https://github.com/harvard-edge/airlearning/blob/master/docs/images/airl-infrastructure.png)
 
 ## Air Learning Environment Generator
