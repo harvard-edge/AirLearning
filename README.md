@@ -6,6 +6,21 @@ Designing an autonomous robot to perform a task involves interactions between va
 We depict the main components of the Air Learning infrastructure below:
 ![](https://github.com/harvard-edge/airlearning/blob/master/docs/images/airl-infrastructure.png)
 
+Key features in this version of Air Learning includes:
+
+* A photorealistic, configurable, and random environment generator based unreal game engine for facilitating domain randomization for the aerial robot.
+
+* We use Microsoft's AirSim plugin in our configurable environment generator for aerial robot model and physics.  We augment the AirSim plugin by having an energy model for the aerial robot.
+
+* OpenAI gym interface to environment generator to train a variety of reinforcement learning algorithms.
+
+* A tight coupling between the parameters of environment generator and reinforcement learning to provide infrastructure to train aerial robot using curriculum learning.
+
+* Quality of Flight metrics to evaluate the performance of reinforcement learning.
+
+* Benchmarking the performance of reinforcement learning algorithm on different onboard computer platforms using hardware-in-the-loop methodology, thus allowing to study the problem holistically.
+
+
 ## Air Learning Environment Generator
 Learning algorithms are data hungry, and the availability of high-quality data is vital for the learning process. Also, an environment that is good to learn from should include different scenarios that are challenging for the robot. By adding these challenging situations, they learn to solve those challenges. For instance, for teaching a robot to navigate obstacles, the data set should have a wide variety of obstacles (materials, textures, speeds, etc.) during the training process.
 
