@@ -6,3 +6,6 @@
 	path = airlearning-rl
 	url = https://github.com/harvard-edge/airlearning-rl.git
 	branch = master
+[submodule "applications/source-seeking"]
+	path = applications/source-seeking
+	url = https://github.com/harvard-edge/source-seeking.git
