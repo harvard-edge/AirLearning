@@ -20,6 +20,7 @@ Key features in this version of Air Learning includes:
 
 * Benchmarking the performance of reinforcement learning algorithm on different onboard computer platforms using hardware-in-the-loop methodology, thus allowing to study the problem holistically.
 
+* Source seeking application 
 
 ## Air Learning Environment Generator
 Learning algorithms are data hungry, and the availability of high-quality data is vital for the learning process. Also, an environment that is good to learn from should include different scenarios that are challenging for the robot. By adding these challenging situations, they learn to solve those challenges. For instance, for teaching a robot to navigate obstacles, the data set should have a wide variety of obstacles (materials, textures, speeds, etc.) during the training process.
@@ -125,7 +126,8 @@ Air Learning aims in softening the boundaries between Robotics, Reinforcement le
 * William Fu (Harvard University)
 * Aleksandra Faust (Robotics at Google)
 * Vijay Janapa Reddi (Harvard University)
+* Bardienus Duisterhof (TU Delft/ Harvard University)
 
 ### Contact (Maintainers)
 * Srivatsan Krishnan (srivatsan@seas.harvard.edu)
-
+* Bardienus Duisterhof (b.p.duisterhof@gmail.com) 
