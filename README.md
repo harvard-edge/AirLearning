@@ -108,13 +108,17 @@ There are two parts to Air Learning.
 More technical information and insights on using Air Learning can be found [here](https://arxiv.org/pdf/1906.00421.pdf):
 
 ```
-@article{krishnan2019air,
-  title={Air Learning: An AI Research Platform for Algorithm-Hardware Benchmarking of Autonomous Aerial Robots},
-  author={Krishnan, Srivatsan and Borojerdian, Behzad and Fu, William and Faust, Aleksandra and Reddi, Vijay Janapa},
-  journal={arXiv preprint arXiv:1906.00421},
-  year={2019}
+@article{krishnan2021air,
+  title={Air Learning: a deep reinforcement learning gym for autonomous aerial robot visual navigation},
+  author={Krishnan, Srivatsan and Boroujerdian, Behzad and Fu, William and Faust, Aleksandra and Reddi, Vijay Janapa},
+  journal={Machine Learning},
+  pages={1--40},
+  year={2021},
+  publisher={Springer}
 }
 ```
+## Press Coverage
+Take a look at the [press coverage](https://techxplore.com/news/2021-08-air-gym-environment-deep-algorithms.html) and some of our future work in using this tool.
 
 ### Contribute
 
